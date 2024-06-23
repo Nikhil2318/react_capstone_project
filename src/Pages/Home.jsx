@@ -2,8 +2,10 @@
 import "./home.css";
 import login from "../images/login.png";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+  const navigate = useNavigate();
   const [data, setData] = useState({
     name: "",
     username: "",
@@ -47,6 +49,19 @@ function Home() {
       errors.checkbox = "Checkbox is required";
     }
     setErrors(errors);
+    if (Object.keys(errors) > 0) return;
+    else {
+      alert("Form Submitted Successfully");
+      localStorage.setItem("userData", JSON.stringify(data));
+      setData({
+        name: "",
+        username: "",
+        email: "",
+        mobile: "",
+        checkbox: false,
+      });
+      navigate("/selection");
+    }
   };
 
   return (
