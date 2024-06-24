@@ -49,7 +49,7 @@ function Home() {
       errors.checkbox = "Checkbox is required";
     }
     setErrors(errors);
-    if (Object.keys(errors) > 0) return;
+    if (Object.keys(errors).length > 0) return;
     else {
       alert("Form Submitted Successfully");
       localStorage.setItem("userData", JSON.stringify(data));

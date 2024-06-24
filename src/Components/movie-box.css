@@ -1,0 +1,27 @@
+.genre-box {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.movie-title {
+  color: #ffffff;
+  font-family: "DM Sans", sans-serif;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.genre-img {
+  margin-left: 13.5px;
+  width: 120px;
+  height: 80px;
+  /* background-color: #ffffff; */
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.genre-img img {
+  width: 120px;
+  height: 80px;
+}

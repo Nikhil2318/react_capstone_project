@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  background-color: #000;
+  height: 100%;
+}
+
+.movie-grid {
+  padding-top: 60px;
+  padding-right: 80px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 60px;
+  row-gap: 40px;
+  justify-content: end;
+}

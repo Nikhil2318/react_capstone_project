@@ -1,0 +1,11 @@
+.chip-btn {
+  padding-left: 15px;
+  margin-right: 12px;
+  border-radius: 25px;
+  background-color: #148a08;
+  color: #ffffff;
+  width: 150px;
+  height: 40px;
+  text-align: left;
+  border: none;
+}
